@@ -1,0 +1,158 @@
+.profileWindow {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 95%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+    color: black;
+}
+
+.profile-content{
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    width: 90%; /* Could be more or less, depending on screen size */
+    position: relative;
+    color: white;
+    background-color: #fefefe;
+    border: 1px solid #888;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+/* Modal Header */
+.profile-header {
+    padding: 2px 16px;
+    background-color: #a01507;
+    color: white;
+}
+
+/* Modal Body */
+.profile-body {
+    padding: 2px 16px;
+    background-color: #ca2918;
+}
+
+/* Modal Footer */
+.profile-footer {
+    padding: 2px 16px;
+    background-color: #a01507;
+    color: white;
+    text-align: right;
+}
+
+.profileWindow .close {
+    position: absolute;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+    right: 0.1rem;
+    width: 2rem;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.profileWindow .close:hover,
+.profileWindow .close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+.profileWindow input[type=text], .profileWindow input[type=password] {
+    padding: 12px 20px;
+    display: inline-block;
+    border: none;
+    box-sizing: border-box;
+    background-color: #171717;
+    color: white;
+    border-bottom: 1px solid white;
+}
+
+.profileWindow button {
+    background-color: #e50914;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+}
+
+.profileWindow .main {
+  float: left;
+  margin: 1rem 1rem 1rem 2rem;
+  text-align: left;
+}
+
+.profileWindow .imgcontainer {
+    text-align: left;
+    margin: 0rem 0rem 2rem 2rem;
+    position: relative;
+    top: 1rem;
+    float: left;
+}
+
+.profileWindow .imgcontainer img {
+    width: 20rem;
+}
+
+.profileWindow .imgcontainer a {
+  cursor: pointer;
+}
+
+.prNick, .prName, .prEmail {
+  border-bottom: 1px solid #e50914;
+}
+
+.prNickCon, .prNickContxt {
+  margin-left: 4.9rem;
+}
+
+.prNameCon, .prNameContxt {
+  margin-left: 1rem;
+}
+
+.prEmailCon, .prEmailContxt {
+  margin-left: 4.1rem;
+}
+
+/* x in textbox */
+.clearable{
+  background: url("close.png") no-repeat right 6px center;
+  background-size: 20px;
+}
+.clearable.x  { background-position: right 6px center; } /* (jQ) Show icon */
+.clearable.onX{ cursor: pointer; position: right 6px center;}              /* (jQ) hover cursor style */
+.clearable::-ms-clear {display: none; width:0; height:0;} /* Remove IE default X */
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {top: -300px; opacity: 0} 
+    to {top: 0; opacity: 1}
+}
+
+@keyframes animatetop {
+    from {top: -300px; opacity: 0}
+    to {top: 0; opacity: 1}
+}
+
+/* Tablet */
+@media screen and (min-width: 600px) {
+    .profileWindow {
+        width: 104%; /* Full width */
+        height: 104%; /* Full height */
+        padding-top: 0px;
+        color: black;
+    }
+}
+
+/* Desktop */
+@media screen and (min-width: 900px) {
+
+}

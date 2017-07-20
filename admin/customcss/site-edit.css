@@ -1,0 +1,35 @@
+.siteTitle {
+  margin-bottom: .5rem;
+}
+
+input[type="text"] {
+  border: none !important;
+  background: #fff !important;
+  box-shadow: inset -1px -1px 3px black !important;
+  font-weight: 700;
+  font-size: x-large;
+}
+
+.siteContent input[type="text"] {
+  width: 25rem !important;
+}
+
+.siteSetting input[type="text"] {
+  width: 16rem !important;
+}
+
+.siteSetting {
+  color: black;
+  width: 300px;
+	background-color: #fff;
+	overflow: hidden;
+	border-radius: 3px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.3);
+	z-index: 3;
+  padding: 1rem;
+}
+
+.siteContent {
+  margin-right: 1rem;
+  margin-bottom: .5rem;
+}

@@ -1,0 +1,75 @@
+.settingsWindow {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 95%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+    color: black;
+}
+
+.settings-content{
+    background-color: #171717;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    width: 90%; /* Could be more or less, depending on screen size */
+    position: relative;
+    color: white;
+}
+
+.settingsWindow .close {
+    position: absolute;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+    right: 0.1rem;
+    width: 2rem;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.settingsWindow .close:hover,
+.settingsWindow .close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+.settingsWindow input[type=text], .settingsWindow input[type=password] {
+    padding: 12px 20px;
+    display: inline-block;
+    border: none;
+    box-sizing: border-box;
+    background-color: #171717;
+    color: white;
+    border-bottom: 1px solid white;
+}
+
+.settingsWindow button {
+    background-color: #e50914;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+}
+
+.settingsWindow .footer {
+  width: 20%;
+  float: right;
+  height: 10rem;
+  margin: 1rem;
+}
+
+.settingsWindow .main {
+  float: left;
+  margin: 1rem 1rem 1rem 2rem;
+  text-align: left;
+}
+
+.settingsWindow label {
+  border-bottom: 1px solid #e50914;
+}

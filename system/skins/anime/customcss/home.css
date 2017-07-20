@@ -1,0 +1,25 @@
+.newAnime .newAnimedescription {
+	display: block;
+	max-width: 16rem;
+	height: 10rem;
+	overflow: hidden;
+}
+
+.newAnime .title {
+    font-weight: 700;
+    font-size: larger;
+    max-width: 16rem;
+		text-align: center;
+}
+
+.newAnime .title hr {
+    width: 5rem;
+		border: none;
+		border-top: 2px solid #464646;
+		color: #FFFFFF;
+		height: 2px;
+}
+
+.animePreview {
+    bottom: 15%;
+}

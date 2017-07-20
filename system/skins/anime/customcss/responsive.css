@@ -1,0 +1,251 @@
+body {
+    width: 90%;
+}
+
+.modal-content {
+  width: 100%;
+}
+
+#menu{
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 701;
+  top: 0;
+  left: 0;
+  background-color: #c92918;
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.5s;
+  /* alt
+  margin: 0;
+  position: fixed;
+  top: 0rem;
+  left: auto;
+  z-index: 700;
+  width: 100%;
+  height: 3rem;
+  background-color: #101010;*/
+}
+
+#menu .closeMen {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#menu a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  display: block;
+  transition: 0.3s;
+  font-weight: 700;
+}
+
+img{
+    border: 0;
+}
+
+#menu h3{
+  border-bottom: 1px solid #e50914;
+  width: auto;
+  float: left;
+  position: absolute;
+  margin-top: 7px;
+  margin-left: 10px;
+  cursor: default;
+}
+
+#localmenu li {
+    list-style-type: none;
+    padding: .2rem;
+    font-weight: 700;
+    color: #fff;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#content {
+   transition: margin-left .5s;
+   padding: 0px 20px 0px 20px;
+}
+
+.openNews {
+  position: fixed;
+  z-index: 9;
+  right: 1rem;
+  top: .7rem;
+  border: none;
+  background: #171717;
+  color: white;
+  border-radius: 3px;
+  width: 1.5rem;
+  height: 1.5rem;
+  font-weight: 700;
+}
+
+.openMen .bar1, .openMen .bar2, .openMen .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.openMen {
+  position: fixed;
+  top: 5px;
+  left: 10px;
+  z-index: 9;
+}
+
+.sidebar {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 701; /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: #101010; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+.sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+    font-weight: 700;
+}
+
+.sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#content {
+  margin-top: 2rem;
+}
+
+#container{
+  text-align: left;
+}
+
+/* Mobil */
+[class*="col-"] {
+    width: 100%;
+    float: left;
+}
+
+.right {
+  float: right;
+}
+
+/* Tablet */
+@media screen and (min-width: 600px) {
+
+      .col-m-1 {width: 8.33%;}
+      .col-m-2 {width: 16.66%;}
+      .col-m-3 {width: 25%;}
+      .col-m-4 {width: 33.33%;}
+      .col-m-5 {width: 41.66%;}
+      .col-m-6 {width: 50%;}
+      .col-m-7 {width: 58.33%;}
+      .col-m-8 {width: 66.66%;}
+      .col-m-9 {width: 75%;}
+      .col-m-10 {width: 83.33%;}
+      .col-m-11 {width: 91.66%;}
+      .col-m-12 {width: 100%;}
+
+      .modal-content {
+        width: 70%;
+      }
+
+      #content{
+          margin-left: 3rem;
+          padding: 1%;
+          margin-right: 3rem;
+          margin-bottom: 3rem
+      }
+}
+
+/* Desktop */
+@media screen and (min-width: 900px) {
+
+      .col-m-1 {width: 8.33%;}
+      .col-m-2 {width: 16.66%;}
+      .col-m-3 {width: 25%;}
+      .col-m-4 {width: 33.33%;}
+      .col-m-5 {width: 41.66%;}
+      .col-m-6 {width: 50%;}
+      .col-m-7 {width: 58.33%;}
+      .col-m-8 {width: 66.66%;}
+      .col-m-9 {width: 75%;}
+      .col-m-10 {width: 83.33%;}
+      .col-m-11 {width: 91.66%;}
+      .col-m-12 {width: 100%;}
+
+      .padding
+
+      a {
+          text-decoration: none;
+      }
+
+      .login {
+          right: 6rem;
+          position: absolute;
+          top: .6rem;
+          cursor: pointer;
+          height: 2rem;
+          width: 3rem;
+          text-align: center;
+      }
+
+      .login span, .logout span {
+        vertical-align: middle;
+      }
+
+      .sidebar {
+          height: 100%; /* 100% Full-height */
+          width: 0; /* 0 width - change this with JavaScript */
+          position: fixed; /* Stay in place */
+          z-index: 1; /* Stay on top */
+          top: 0;
+          left: 0;
+          background-color: #101010; /* Black*/
+          overflow-x: hidden; /* Disable horizontal scroll */
+          padding-top: 60px; /* Place content 60px from the top */
+          transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+      }
+
+      .sidebar a {
+          padding: 8px 8px 8px 32px;
+          text-decoration: none;
+          font-size: 25px;
+          color: #818181;
+          display: block;
+          transition: 0.3s;
+          font-weight: 700;
+      }
+
+      .sidebar .closebtn {
+          position: absolute;
+          top: 0;
+          right: 25px;
+          font-size: 36px;
+          margin-left: 50px;
+      }
+
+      .modal-content {
+        width: 40%;
+      }
+}

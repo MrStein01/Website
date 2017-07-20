@@ -1,0 +1,111 @@
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+   display: inline-block;
+   right: 1rem;
+   position: fixed;
+   top: 1rem;
+   cursor: pointer;
+   height: 3rem;
+   width: 3rem;
+   text-align: center;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+   display: none;
+   position: absolute;
+   background-color: #1B1C1D;
+   min-width: 7rem;
+   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+   z-index: 1;
+   margin-left: -6.9rem;
+   margin-top: 3.3rem;
+   padding-left: 20px;
+   padding-right: 20px;
+}
+
+.dropdown-content li {
+     padding: 12px 16px;
+     text-decoration: none;
+     display: block;
+}
+
+.dropdown-content li ul {
+  display: none;
+  right: 116px;
+  position: absolute;
+  background-color: #1B1C1D;
+  top: 0;
+  width: 12em;
+  z-index: 701;
+  min-height: 3em;
+  padding-left: 0px;
+}
+
+.dropdown-content li:hover ul {
+  display: block;
+}
+
+.dropdown-content li ul:hover {
+  display: block;
+}
+
+.dropdown-content li ul a {
+    display: block;
+    padding-bottom: 8px;
+    padding-top: 8px;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+   background-color: #3e8e41;
+}
+
+.dropdown img {
+    width: 1.5em;
+    height: 1.5em;
+    border-radius: 4px;
+    float: left;
+    margin-left: -2rem;
+    position: absolute;
+}
+
+.dropdown .dropdown-content:before {
+     position: absolute;
+     content:"";
+     width: 10px;
+     height: 10px;
+     top: -5px;
+     left: 20px;
+     -webkit-transform: rotate(45deg);
+     -moz-transform: rotate(45deg);
+     -o-transform: rotate(45deg);
+     -ms-transform: rotate(45deg);
+     transform: rotate(45deg);
+     left: 8rem;
+     background: #1B1C1D;
+}
+
+.openNav {
+  float: left;
+  right: 3rem;
+  cursor: pointer;
+}
+
+.openNav:hover {
+  color: #e50914;
+}
+
+.openNav img {
+  width: 2em;
+  height: 2em;
+  border-radius: 4px;
+  z-index: 700;
+  top: 10px;
+  right: 10px;
+}
+
+.logout a {
+  font-size: 17px;
+  color: white !important;
+}
